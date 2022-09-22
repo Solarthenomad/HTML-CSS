@@ -1,0 +1,20 @@
+.outer {
+
+}
+p {
+    font-style: oblique;
+
+    font-weight : 600;
+}
+
+div {
+    font-size: 18px;
+    font-size : 1.2rem;
+    font-size : 120%;
+
+}
+
+
+
+/*text-decoration : 여러개의 속성들이 복수로 와도 됨. 자세한 것은 style.css에서 보여주겠음*/
+/*text-transform : 알파벳의 대소문자 지정으로 uppercase(모든 문자들을 대문자로 바꿔주기), capitalize(맨 앞문자만 대문자로 바꿔주는 것)*/
