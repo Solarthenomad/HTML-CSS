@@ -1,0 +1,74 @@
+/*자속 결합자*/
+/*좀 구분해야 되는게, css-02의 style.css의 .dark.blue는 두개의 '대등한 요소'인 dark와 blue class 두개를 선택한 것이지만, 이 것은 outer class의 li 태그 하나만 선택한 것임. 즉 class 아래로 종속된  li태그들 모두를 즉 class 아래의 모든 li를 선택한 것이다.*/
+.outer li {
+   color :olivedrab;
+}
+/*outer class의 직속직계 자식인(딸뻘인o 손녀x) li 태그만 선택함*/
+.outer > li {
+    color : dodgerblue;
+}
+/*.outer의 직속 li 중 그 li의 자식인(손녀인) li만 선택해줌*/
+.outer > li li {
+    text-decoration: dashed;
+}
+
+/*starter class 이후의 모든 결합자들. starter 앞에 나오는 li들은 선택이안됨!*/
+.starter ~ li {
+    font-style : italic;
+    background-color: aqua;
+}
+
+/*starter을 제외하고 starter 바로 다음의 li만 적용되는 속성*/
+.starter + li {
+    font-weight: bold;
+}
+.outer -li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size : 16px;
+}
+/*앞에서의 ol 태그 안에 있는 li(ol li :) 중 첫번쨰 li(li : first-child)와 마지막 li(li : last-child) 둘을 선택해줌 */
+ol li:first-child, ol li:last-child{
+    text-decoration: line-through;/*line-through는 취소선을 그어주는 것이다.*/
+}
+
+/*~가 아닌 요소는 not(:nth-child)로 해준다.*/
+.outer > li:not(:last-child) {
+    color :coral;
+
+}
+
+/*ul 태그 중에서 outer div 선택자가 아닌 것만 제외한 모든 선택자의 li를 선택하기얜 진짜 연습을 해보자.*/
+ul:not(.outer)li {
+    color : deeppink;
+}
+/*ol 태그의 li 태그 중 세번째 li한테만 적용시켜준다.*/
+ol li:nth-child(3) {
+    color :antiquewhite;
+
+}
+
+ol li:nth-child(3n) {
+    color :blue;
+    background-color: bisque;
+}
+
+ol li:nth-child(3n+1) {
+    background-color: cadetblue;
+}
+
+ol li:nth-child(even) {
+    text-decoration: underline;
+}
+
+ol li:nth-child(odd) {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*마우스 호버 가상 클래스에 입히기 = 애니메이션 입히기*/
+/*마우스로 어떤 클래스를 갖다 대면 변화함*/
+/*태그명:동작이름*/
+/*단 여기에 background-color을 바꿔주기로 되어있는데 이미 앞에서 background 속성이 부여된 것은 변화가 안된다.*/
+/*이렇게 태그 속성이 미리 부여된 것은 애니메이션으로 변화가 안됨.*/
+li:hover{
+    font-size:large;
+    background-color: aqua;
+}
