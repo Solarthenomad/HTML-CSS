@@ -1,0 +1,22 @@
+/*list-style : 으로 ol ul, li에 스타일을 주는 것이 가능함*/
+ul {
+    list-style: disc; /*뚱뚱한 원*/
+}
+ol >li:last-child{
+    text-decoration: line-through;
+}
+
+/*
+ul {
+    list-style : circle;
+}
+
+ul > li : first-child{
+    list-style : "이모지"
+
+}
+
+ol {
+    list-style :lower-alpha;
+}
+*/

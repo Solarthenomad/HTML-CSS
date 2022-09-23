@@ -1,0 +1,11 @@
+p{
+    text-align :center;
+    text-align: justify;
+
+    letter-spacing: 0.5rem;
+    word-spacing: 0.3rem;
+    line-height: 1.5rem;
+    /*줄과 줄 사이 간격(줄높이)는 line-height이고 text-align:justify가 어떻게 되는지 보자!*/
+}
+
+/*text-indent : rem은 들여쓰기를 조절하는 것이 가능함. -값을 주면 내어쓰기가 되고, +갑싱면 들여쓰기가 된다. px, &%, rem으로 조절하는 것이 가능하다.*/
