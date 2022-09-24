@@ -1,0 +1,5 @@
+ul > li {
+    margin-right: 2em;
+    display: inline-block; /*가로 속성*/
+    padding: 8px;
+}

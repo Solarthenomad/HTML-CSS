@@ -1,0 +1,56 @@
+* {
+    font-size : 20px;
+    /*줄간격 조절은 line-height로 조절한다.*/
+    line-height : 1.5rem;
+}
+h1{
+    font-size: 30px;
+    /*2px 2px(가로 세로) 0px(흐림처ㅣ)*/
+    text-shadow: 2px 2px 0px lightblue;
+}
+
+#eng_name {
+    text-transform: capitalize;
+
+}
+#skyblue, violet {
+    text-decoration: underline wavy;
+}
+
+#skyblue {
+    text-decoration: skyblue;
+}
+
+#violet{
+    text-decoration: violet;
+}
+
+li {
+    list-style: symbols(heart);
+}
+
+strong {
+    font-weight:bold;
+}
+
+.outer {
+    background-color: orange;
+    width :70vw;
+    height : 20px;
+    margin : 10px;
+}
+
+.in1 {
+    background-color: red;
+    width :50%;
+    height : 50%;
+    margin : 30px;
+}
+
+.in2 {
+    background-color: blue;
+    width : 50%;
+    height : 50%;
+    margin : 30px;
+}
+

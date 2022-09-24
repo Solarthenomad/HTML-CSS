@@ -1,0 +1,17 @@
+/*바깥쪽 상자먼저 해주자. 틀먼저 구현해주기*/
+.MyCatInfo {
+    margin : 35px auto;
+    width : 500px;
+    border-radius:12px;
+    background-color: antiquewhite;
+    box-shadow : 2px 2px gray;
+}
+/*unsplash에서 이미지 아무거나 가져오기*/
+.ProfilePicture{
+    width : 300px;
+    height : 300px;
+    background-image: url(...);
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+}

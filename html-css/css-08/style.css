@@ -1,0 +1,23 @@
+*{
+    marign : 30px;
+    color:white;
+}
+/*px는 계속해서 크기가 고정되는데, %는 화면 크기가 100이라고 뒀을 때 그에 비하는 것이다.*/
+.div1 {
+    display:inline-block;
+
+}
+
+.div2{
+    background-color: blue;
+    /*vh도 %와 똑같음*/
+    width :50vh;
+    display: none; /*display none은 아예 css에서 div2를 삭제시켜버림. */
+    visibility: hidden; /*이 요소를 그냥 가리기만 함. div2가 화면에서 그냥 보이지 않음*/
+
+}
+.div{
+    background-color: green;
+    width:calc(50%-50px);
+    /*크기 줄이기 굉장히 애매할 떄 사용하는 것이다. 50%에서 항상 절대값 50px만큼 줄어들게 됨.*/
+}

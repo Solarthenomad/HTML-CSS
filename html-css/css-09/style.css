@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+}
+
+div {
+    width :200px;
+    height : 200px;
+    background-color: orangered;
+    margin : 0 auto;
+    /*display : inline-block이라고 하면 그냥으로만 하면 가운데로 가질 않음 따라서 body 부분의 text-align을 center로 둬야함.(inline-block은 텍스트 속성을 따르기 때문)*/
+}
